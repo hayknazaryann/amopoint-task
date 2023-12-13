@@ -52,6 +52,7 @@
 <script src="{{ asset('vendors/chart.js/Chart.min.js') }}"></script>
 <script src="{{asset('js/general.js')}}?ver={{ filemtime(public_path('js/general.js')) }}" defer></script>
 <script src="{{asset('js/main.js')}}?ver={{ filemtime(public_path('js/main.js')) }}" defer></script>
+<script src="{{asset('js/visitors.js')}}?ver={{ filemtime(public_path('js/visitors.js')) }}" defer></script>
 @yield('js')
 </body>
 </html>

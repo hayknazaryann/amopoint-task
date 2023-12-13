@@ -68,7 +68,6 @@
                         datasets: [{
                             label: 'Visits',
                             backgroundColor: ["#51e2f5", "#9df9ef", "#ffa8B6", "#a28089", "#e5eaf5", "#00DDFF"],
-                            // borderColor: borderColor,
                             data: values,
                             pointRadius: 1,
                             pointHoverRadius: 1,

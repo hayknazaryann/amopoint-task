@@ -23,9 +23,17 @@ body {
     color: var(--main-color);
 }
 
+code {
+    color: var(--main-color);
+}
+
 .navbar {
     background-color: var(--bg-card);
     border-bottom: 1px solid var(--border-main-color);
+}
+
+.navbar-nav {
+    gap: 12px;
 }
 
 .navbar-expand-lg .navbar-collapse {
