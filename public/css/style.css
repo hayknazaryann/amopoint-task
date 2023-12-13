@@ -1,0 +1,49 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+
+:root {
+    --bg-main: #18191A;
+    --bg-overlay: #171616;
+    --main-color: #b0b3b8;
+    --border-main-color: #3E4042;
+    --btn-secondary-bg: #ffffff19;
+    --btn-secondary-hover-bg: #FFFFFF66;
+    --btn-secondary-border: #ffffff19;
+    --bg-card: #242526;
+    --bg-card-2: #FFFFFF19;
+    --bg-card-hover-2: #FFFFFF33;
+    --bg-input: #3a3b3c;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--main-color);
+}
+
+.navbar {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-main-color);
+}
+
+.navbar .nav-link,
+.navbar .nav-logo {
+    color: var(--main-color);
+}
+
+.page-content {
+    margin-top: 20px;
+}
+
+.import-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.import-form-content {
+    border: 1px solid var(--border-main-color);
+    padding: 10px;
+}
