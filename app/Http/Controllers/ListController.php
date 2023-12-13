@@ -14,4 +14,12 @@ class ListController extends Controller
     {
         return view('list.index');
     }
+
+    /**
+     * @return View
+     */
+    public function visitors(): View
+    {
+        return view('visitors.index');
+    }
 }

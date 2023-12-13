@@ -49,8 +49,9 @@
 <script src="{{ asset('vendors/plugins/jquery.min.js') }}"></script>
 <script src="{{ asset('vendors/select2/js/select2.min.js') }}"></script>
 <script src="{{ asset('vendors/sweetalert/sweetalert2.min.js') }}"></script>
+<script src="{{ asset('vendors/chart.js/Chart.min.js') }}"></script>
 <script src="{{asset('js/general.js')}}?ver={{ filemtime(public_path('js/general.js')) }}" defer></script>
 <script src="{{asset('js/main.js')}}?ver={{ filemtime(public_path('js/main.js')) }}" defer></script>
-
+@yield('js')
 </body>
 </html>
