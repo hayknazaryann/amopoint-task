@@ -46,9 +46,9 @@ class VisitorRepository extends EloquentRepository implements VisitorInterface
     public function byHour(): Collection
     {
         return $this->getModel()->select([
-            'id', 'ip', 'date',
+            'id', 'date',
             DB::raw("DATE_FORMAT(date, '%Y-%m-%d %H') as formatted_date"),
-            DB::raw("DATE_FORMAT(date, '%H:00') as hour"),
+            DB::raw("DATE_FORMAT(date, '%Y-%m-%d %H:00') as hour"),
         ])
             ->selectRaw('count(id) as count')
             ->groupBy('formatted_date')

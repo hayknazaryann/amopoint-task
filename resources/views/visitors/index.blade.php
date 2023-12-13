@@ -48,27 +48,27 @@
                     chartContent.html('<canvas id="'+chartId+'"></canvas>');
                     var labels =  res.data.labels;
                     var values =  res.data.values;
-                    let backgroundColor = 'rgba(54, 162, 235, 0.5)';
-                    let borderColor = 'rgba(75, 192, 192, 0.5)';
-
-                    if(type == 'pie') {
-                        backgroundColor = [
-                            'rgba(54, 162, 235, 0.5)',
-                            'rgba(75, 192, 192, 0.5)'
-                        ];
-                        borderColor = [
-                            'rgba(54, 162, 235, 0.5)',
-                            'rgba(75, 192, 192, 0.5)'
-                        ];
-                    }
+                    // let backgroundColor = 'rgba(54, 162, 235, 0.5)';
+                    // let borderColor = 'rgba(75, 192, 192, 0.5)';
+                    //
+                    // if(type == 'pie') {
+                    //     backgroundColor = [
+                    //         'rgba(54, 162, 235, 0.5)',
+                    //         'rgba(75, 192, 192, 0.5)'
+                    //     ];
+                    //     borderColor = [
+                    //         'rgba(54, 162, 235, 0.5)',
+                    //         'rgba(75, 192, 192, 0.5)'
+                    //     ];
+                    // }
 
                     const data = {
                         labels: labels,
 
                         datasets: [{
-                            label: 'Notes',
-                            backgroundColor: backgroundColor,
-                            borderColor: borderColor,
+                            label: 'Visits',
+                            backgroundColor: ["#51e2f5", "#9df9ef", "#ffa8B6", "#a28089", "#e5eaf5", "#00DDFF"],
+                            // borderColor: borderColor,
                             data: values,
                             pointRadius: 1,
                             pointHoverRadius: 1,

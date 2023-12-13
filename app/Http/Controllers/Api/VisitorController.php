@@ -28,7 +28,6 @@ class VisitorController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
      * @return JsonResponse
      */
     public function visitorsByHours(): JsonResponse
@@ -44,7 +43,6 @@ class VisitorController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
      * @return JsonResponse
      */
     public function visitorsByCity(): JsonResponse
@@ -60,7 +58,6 @@ class VisitorController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
      * @param Request $request
      * @return JsonResponse
      */
@@ -76,13 +73,5 @@ class VisitorController extends Controller
                 'success' => false,
             ], 400);
         }
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
     }
 }
