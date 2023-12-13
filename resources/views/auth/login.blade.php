@@ -30,7 +30,7 @@
                 </label>
             </div>
             <div class="form-button-row">
-                <button type="submit" class="btn button-secondary" id="login-button">
+                <button type="submit" class="btn btn-secondary" id="login-button">
                     {{__('Login')}}
                 </button>
             </div>

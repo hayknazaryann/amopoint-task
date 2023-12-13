@@ -15,12 +15,12 @@ class AdminSeeder extends Seeder
     {
         User::query()->firstOrCreate(
             [
-                'email' => 'admin@admin.com',
+                'email' => config('admin.email'),
             ],
             [
-                'name' => 'Admin',
-                'email' => 'admin@admin.com',
-                'password' => Hash::make('admin')
+                'name' => config('admin.name'),
+                'email' => config('admin.email'),
+                'password' => Hash::make(config('admin.password'))
             ]
         );
     }
