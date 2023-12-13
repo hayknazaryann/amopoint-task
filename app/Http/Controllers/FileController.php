@@ -7,6 +7,7 @@ use App\Services\FileService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Response;
+use Illuminate\View\View;
 
 class FileController extends Controller
 {
@@ -22,6 +23,14 @@ class FileController extends Controller
     public function __construct(FileService $fileService)
     {
         $this->fileService = $fileService;
+    }
+
+    /**
+     * @return View
+     */
+    public function index(): View
+    {
+        return view('import.index');
     }
 
 

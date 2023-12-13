@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Task 1</a>
+                    <a class="nav-link" href="{{route('import')}}">{{__('Import')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Task 2</a>
+                    <a class="nav-link" href="{{route('list')}}">{{__('List')}}</a>
                 </li>
             </ul>
         </div>

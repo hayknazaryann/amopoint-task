@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\FileController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [FileController::class, 'index'])->name('import');
 Route::post('import', [FileController::class, 'import'])->name('import.file');
+
+Route::get('list', [ListController::class, 'index'])->name('list');

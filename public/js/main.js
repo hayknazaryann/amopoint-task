@@ -16,10 +16,28 @@ $(document)
         }).done(function (response) {
             if (response.success) {
                 $('.import-text-content').html(`<code>${response.data.content}</code>`);
+                $('#characters').html(`Characters: ${response.data.characters}`)
+                $('#numbers').html(`Numbers: ${response.data.numbers}`)
             }
         }).fail(function (error) {
             failResponse(error);
         })
+    })
+    .on('change', 'select#type', function () {
+        const selectedType = $(this).val();
+        if (selectedType) {
+            var inputElm = $(`input[name="input_${selectedType}"]`),
+                inputParent = inputElm.closest('.input-row'),
+                buttonElm = $(`input[name="button_${selectedType}"]`),
+                buttonParent = buttonElm.closest('.button-row');
+            inputParent.siblings('.input-row').hide()
+            buttonParent.siblings('.button-row').hide()
+            inputParent.show();
+            buttonParent.show();
+        } else {
+            $('.input-row').show();
+            $('.button-row').show();
+        }
     })
 
 function initSelect () {

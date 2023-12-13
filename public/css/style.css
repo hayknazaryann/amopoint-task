@@ -35,6 +35,9 @@ body {
 
 .page-content {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .import-content {
@@ -46,4 +49,17 @@ body {
 .import-form-content {
     border: 1px solid var(--border-main-color);
     padding: 10px;
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.list-row {
+    display: grid;
+    gap: 10px;
+    width: 100%;
 }
